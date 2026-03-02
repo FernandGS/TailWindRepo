@@ -1,5 +1,9 @@
+# Explicitly define provider
+[providers]
+node = "20"
+
 [phases.setup]
-nixPkgs = ["nodejs_22"]
+nixPkgs = ["nodejs_20"]
 
 [phases.install]
 cmds = ["npm ci"]
